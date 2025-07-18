@@ -6,8 +6,7 @@ import Services from "~/components/Services";
 
 export function meta({ }: Route.MetaArgs) {
     return [
-        { title: "Kickstart | Home" },
-        { name: "description", content: "Welcome to React Router!" },
+        { title: "Kickstart | Home" }
     ];
 }
 

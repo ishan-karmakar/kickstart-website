@@ -8,5 +8,8 @@ export default function NavLinks() {
         <Link viewTransition className="px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/#services">
             Services
         </Link>
+        <Link viewTransition className="px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/contact">
+            Contact Us
+        </Link>
     </>
 }
