@@ -8,7 +8,7 @@ export default function NavLinks() {
         <Link viewTransition className="px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/#services">
             Services
         </Link>
-        <Link viewTransition className="px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/contact">
+        <Link viewTransition className="px-4 font-extrabold text-gray-500 hover:text-blue-900" to="mailto:support@kickstartnp.com">
             Contact Us
         </Link>
     </>
