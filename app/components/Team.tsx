@@ -49,7 +49,7 @@ export default function Team() {
                             font-bold">We <span className='font-black'>Build</span></h3>
                         <div>
                             <p className='my-3 text-xl text-gray-600 font-semibold'>
-                                With over 10 years experience in software analysis and design and a deep understanding of the latest IT trends and solutions, we provide customized recommendations and strategies to help you improve your operations, reduce costs, and increase efficiency.
+                                As motivated high school students with hands-on experience in web design, social media strategy, and digital branding, we offer personalized support to help local businesses and organizations grow their online presence, reach more customers, and operate more effectively.
                             </p>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ export default function Team() {
                         </div>
                         <h3 className="text-3xl  text-blue-900 font-bold">We <span className='font-black'>Collaborate</span></h3>
                         <div>
-                            <p className='my-3 text-xl text-gray-600 font-semibold'>We can collaborate with your existing tech team to scale existing software applications or design customized software applications that suits your everyday need and simplifies various processes.</p>
+                            <p className='my-3 text-xl text-gray-600 font-semibold'>We collaborate closely with your team to scale and improve existing websites and digital media, ensuring that it aligns with your goals, reflects your brand identity, and is fully equipped to gain traction.</p>
                         </div>
                     </div>
                 </div>

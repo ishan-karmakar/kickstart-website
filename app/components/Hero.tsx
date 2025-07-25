@@ -13,9 +13,9 @@ export default function Hero() {
                 <div id='hero' className="flex flex-col lg:flex-row py-8 justify-between text-center lg:text-left">
                     <div className="lg:w-1/2 flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="200">
                         <h1 className="mb-5 md:text-5xl text-3xl font-bold text-blue-900">
-                            Your Mission Deserves an Audience
+                            Tailored websites and social media for community impact
                         </h1>
-                        <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">We're giving voices volume, one at a time</div>
+                        <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">We are a driven team committed to empowering local businesses through impactful websites and social media.</div>
                         <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                             <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
                                 Learn more
