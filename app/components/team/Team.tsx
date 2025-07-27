@@ -1,10 +1,6 @@
 import img from '~/images/web.svg'
 import img2 from '~/images/app.svg'
-
-const TEAM = [
-    { name: "Satvik Vasikarla", image: img, description: '"I joined Kickstart to better help local organizations and make a positive impact in the community"' },
-    { name: "Ishan Karmakar", image: img2, description: '"I joined Kickstart to better help local organizations and make a positive impact in the community"' },
-]
+import TeamMember from './TeamMember'
 
 export default function Team() {
     return <div className="bg-gray-100 py-12" id="our-team">
@@ -19,18 +15,13 @@ export default function Team() {
 
             <div className="px-12" data-aos="fade-down" data-aos-delay="600">
                 <div className="flex flex-row gap-10 justify-center">
-                    {TEAM.map(team => <div key={team.name} className="max-w-128 bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-300 rounded-lg shadow-2xl p-3 group">
-                        <div className="m-2">
-                            <img alt={team.name} className="mx-auto group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={team.image} />
-                            <h2 className="font-semibold my-4 text-2xl text-center">{team.name}</h2>
-                            <p className="text-lg text-center font-medium">{team.description}</p>
-                        </div>
-                    </div>)}
+                    <TeamMember name="Ishan Karmakar" image={img} description='"I joined Kickstart to better help local organizations and make a positive impact in the community"' />
+                    <TeamMember name="Satvik Vasikarla" image={img2} description='"I joined Kickstart to better help local organizations and make a positive impact in the community"' />
                 </div>
             </div>
         </section>
 
-        <section>
+        {/* <section>
             <div className="m-auto max-w-6xl p-2 md:p-12 h-5/6">
                 <div className="flex flex-col-reverse lg:flex-row py-8 justify-between lg:text-left" data-aos="zoom-out">
                     <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
@@ -56,6 +47,6 @@ export default function Team() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
     </div>
 }
