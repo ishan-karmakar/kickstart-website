@@ -1,7 +1,7 @@
 import type { Route } from "./+types/home";
 import Hero from "~/components/Hero";
 import Mission from "~/components/Mission";
-import Portfolio from "~/components/Portfolio";
+import Socials from "~/components/Socials";
 import Team from "~/components/Team";
 
 export function meta({ }: Route.MetaArgs) {
@@ -15,6 +15,6 @@ export default function Home() {
         <Hero />
         <Mission />
         <Team />
-        <Portfolio />
+        <Socials />
     </>
 }
