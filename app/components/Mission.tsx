@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import img from '../images/Web-developer.svg'
+import img from '~/images/Web-developer.svg'
 
 export default function Mission() {
     return <>

@@ -1,5 +1,5 @@
-import img from '../images/web.svg'
-import img2 from '../images/app.svg'
+import img from '~/images/web.svg'
+import img2 from '~/images/app.svg'
 
 const TEAM = [
     { name: "Satvik Vasikarla", image: img, description: '"I joined Kickstart to better help local organizations and make a positive impact in the community"' },

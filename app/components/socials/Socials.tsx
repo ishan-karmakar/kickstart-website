@@ -1,5 +1,5 @@
-import img from '../images/web.svg'
-import img2 from '../images/app.svg'
+import img from '~/images/web.svg'
+import img2 from '~/images/app.svg'
 import { Link } from 'react-router'
 
 const SOCIALS = [

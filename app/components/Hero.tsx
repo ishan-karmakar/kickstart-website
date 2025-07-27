@@ -1,6 +1,5 @@
 import { Link } from "react-router";
-import heroImg from '../images/web-dev.svg'
-import Navbar from "./Navbar";
+import img from '~/images/web-dev.svg'
 
 export default function Hero() {
     return <>
@@ -21,7 +20,7 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="flex lg:justify-end w-full lg:w-1/2" data-aos="fade-up" data-aos-delay="700">
-                        <img alt="card img" className="rounded-t float-right duration-1000 w-full" src={heroImg} />
+                        <img alt="card img" className="rounded-t float-right duration-1000 w-full" src={img} />
                     </div>
                 </div>
             </div>
