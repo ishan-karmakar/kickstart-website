@@ -1,13 +1,6 @@
 import img from '~/images/web.svg'
 import img2 from '~/images/app.svg'
-import { Link } from 'react-router'
-
-const SOCIALS = [
-    { image: img, link: "mailto:kickstartnp@gmail.com", alt: "Email" },
-    { image: img2, link: "tel:+1111111111", alt: "Phone" },
-    { image: img, link: "https://linkedin.com", alt: "LinkedIn" },
-    { image: img2, link: "https://instagram.com", alt: "Instagram" }
-]
+import Social from './Social'
 
 export default function Socials() {
     return <div className="py-12" id="socials">
@@ -22,9 +15,10 @@ export default function Socials() {
 
             <div className="px-12" data-aos="fade-down" data-aos-delay="600">
                 <div className="flex flex-row justify-center gap-5">
-                    {SOCIALS.map(social => <Link to={social.link} key={social.link} className='flex bg-white aspect-square transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-300 hover:text-white rounded-lg shadow-2xl p-3 group'>
-                        <img alt={social.alt} className="group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={social.image} />
-                    </Link>)}
+                    <Social name="Email" link="mailto:kickstartnp@gmail.com" image={img} />
+                    <Social name="Phone" link="tel:+1111111111" image={img2} />
+                    <Social name="LinkedIn" link="https://linkedin.com" image={img} />
+                    <Social name="Instagram" link="https://instagram.com" image={img2} />
                 </div>
             </div>
         </section>
