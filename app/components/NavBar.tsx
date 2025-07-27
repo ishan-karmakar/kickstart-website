@@ -13,7 +13,6 @@ function NavLink({ name, to }: NavLinkProps) {
 }
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false)
     const [top, setTop] = useState(false)
 
     useEffect(() => {
@@ -24,8 +23,8 @@ export default function Navbar() {
 
     return <nav className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top && 'bg-white shadow-lg'}`}>
         <div className="flex flex-row justify-between items-center py-2">
-            <div className="flex flex-row md:mx-12 items-center">
-                <img src="/favicon.ico" />
+            <div className="flex flex-row ml-5 items-center">
+                <img src="/android-chrome-512x512.png" className="h-20 pr-2" />
                 <Link to="/#hero"><h1 className="font-extrabold text-4xl text-blue-900">Kickstart</h1></Link>
             </div>
             <div className='text-lg font-extrabold space-x-6 lg:inline-block p-5'>
