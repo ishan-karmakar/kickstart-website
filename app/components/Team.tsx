@@ -19,7 +19,7 @@ export default function Team() {
 
             <div className="px-12" data-aos="fade-down" data-aos-delay="600">
                 <div className="flex flex-row gap-10 justify-center">
-                    {TEAM.map(team => <div className="max-w-128 bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                    {TEAM.map(team => <div key={team.name} className="max-w-128 bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                         <div className="m-2">
                             <img alt={team.name} className="mx-auto group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={team.image} />
                             <h2 className="font-semibold my-4 text-2xl text-center">{team.name}</h2>
