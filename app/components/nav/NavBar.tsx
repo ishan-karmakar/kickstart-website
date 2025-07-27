@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
-import NavLinks from "./NavLinks";
+import NavLink from "./NavLink";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +19,10 @@ export default function Navbar() {
                 <Link to="/#hero"><h1 className="font-extrabold text-4xl text-blue-900">Kickstart</h1></Link>
             </div>
             <div className='text-lg font-extrabold space-x-6 lg:inline-block p-5'>
-                <NavLinks />
+                <NavLink to="/#about" name="Home" />
+                <NavLink to="/#mission" name="Our Mission" />
+                <NavLink to="/#our-team" name="Our Team" />
+                <NavLink to="/#socials" name="Socials" />
             </div>
         </div>
     </nav>
