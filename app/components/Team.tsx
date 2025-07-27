@@ -1,6 +1,11 @@
 import img from '../images/web.svg'
 import img2 from '../images/app.svg'
 
+const TEAM = [
+    { name: "Satvik Vasikarla", image: img, description: '"I joined Kickstart to better help local organizations and make a positive impact in the community"' },
+    { name: "Ishan Karmakar", image: img2, description: '"I joined Kickstart to better help local organizations and make a positive impact in the community"' },
+]
+
 export default function Team() {
     return <div className="bg-gray-100 py-12" >
         <section data-aos="zoom-in-down">
@@ -13,27 +18,14 @@ export default function Team() {
             </div>
 
             <div className="px-12" data-aos="fade-down" data-aos-delay="600">
-                <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-5">
-
-                    <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
-                        <div className="m-2 text-justify text-sm">
-                            <img alt="card img" className="mx-auto rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img} />
-                            <h2 className="font-semibold my-4 text-2xl text-center">Ishan Karmakar</h2>
-                            <p className="text-lg text-center font-medium">
-                                "I joined Kickstart to better help local organizations and make a positive impact in the community."
-                            </p>
+                <div className="flex flex-row gap-10 justify-center">
+                    {TEAM.map(team => <div className="max-w-128 bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                        <div className="m-2">
+                            <img alt={team.name} className="mx-auto group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={team.image} />
+                            <h2 className="font-semibold my-4 text-2xl text-center">{team.name}</h2>
+                            <p className="text-lg text-center font-medium">{team.description}</p>
                         </div>
-                    </div>
-
-                    <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
-                        <div className="m-2 text-justify text-sm">
-                            <img alt="card img" className="mx-auto rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img2} />
-                            <h2 className="font-semibold my-4 text-2xl text-center">Satvik Vasikarla</h2>
-                            <p className="text-lg text-center font-medium">
-                                "I joined Kickstart to better help local organizations and make a positive impact in the community."
-                            </p>
-                        </div>
-                    </div>
+                    </div>)}
                 </div>
             </div>
         </section>
