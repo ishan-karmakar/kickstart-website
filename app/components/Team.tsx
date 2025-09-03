@@ -1,21 +1,5 @@
-import img from '~/images/web.svg'
-import img2 from '~/images/app.svg'
-
-type TeamMemberProps = {
-    name: string
-    image: string
-    description: string
-}
-
-function TeamMember(props: TeamMemberProps) {
-    return <div className="max-w-128 bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-300 rounded-lg shadow-2xl p-3 group">
-        <div className="m-2">
-            <img alt={props.name} className="mx-auto group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={props.image} />
-            <h2 className="font-semibold my-4 text-2xl text-center">{props.name}</h2>
-            <p className="text-lg text-center font-medium">{props.description}</p>
-        </div>
-    </div>
-}
+import imgIshan from '../images/ishan.jpg'
+import imgSatvik from '../images/satvik.png'
 
 export default function Team() {
     return <div className="bg-gray-100 py-12" id="our-team">
@@ -29,14 +13,32 @@ export default function Team() {
             </div>
 
             <div className="px-12" data-aos="fade-down" data-aos-delay="600">
-                <div className="flex flex-row gap-10 justify-center">
-                    <TeamMember name="Ishan Karmakar" image={img} description='"I joined Kickstart to better help local organizations and make a positive impact in the community"' />
-                    <TeamMember name="Satvik Vasikarla" image={img2} description='"I joined Kickstart to better help local organizations and make a positive impact in the community"' />
+                <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-12 justify-center">
+
+                    <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-2xl shadow-2xl p-16 group flex flex-col items-center w-[30rem] mx-auto">
+                        <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out mb-8 w-56 h-75 object-cover shadow-xl" src={imgIshan} />
+                        <h2 className="font-semibold my-4 text-4xl text-center">Ishan Karmakar</h2>
+                        <div className="max-w-2xl mx-auto">
+                            <p className="text-2xl text-center font-medium">
+                                "I joined Kickstart to help local businesses and organizations grow their online presence while enhancing my web dvelopment skills."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-2xl shadow-2xl p-16 group flex flex-col items-center w-[30rem] mx-auto">
+                        <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out mb-8 w-56 h-75 object-cover shadow-xl" src={imgSatvik} />
+                        <h2 className="font-semibold my-4 text-4xl text-center">Satvik Vasikarla</h2>
+                        <div className="max-w-2xl mx-auto">
+                            <p className="text-2xl text-center font-medium">
+                                "I joined Kickstart to make a positive impact in my community through growing the reach of local businesses and organizations while enhancing my skills in advertising and strategy."
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        {/* <section>
+        <section>
             <div className="m-auto max-w-6xl p-2 md:p-12 h-5/6">
                 <div className="flex flex-col-reverse lg:flex-row py-8 justify-between lg:text-left" data-aos="zoom-out">
                     <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
@@ -53,7 +55,7 @@ export default function Team() {
                     </div>
                     <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
                         <div className='text-blue-900 mb-4'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" className='fill-current'><path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" className='fill-current'><path d="m7.375 16.781 1.25-1.562L4.601 12l-4.024-3.219 1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path></svg>
                         </div>
                         <h3 className="text-3xl  text-blue-900 font-bold">We <span className='font-black'>Collaborate</span></h3>
                         <div>
@@ -62,6 +64,6 @@ export default function Team() {
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
     </div>
 }
