@@ -4,6 +4,6 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  base: "/kickstart-website",
+  base: "/kickstart-website/",
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
 });
