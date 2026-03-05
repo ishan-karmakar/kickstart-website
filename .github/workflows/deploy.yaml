@@ -7,11 +7,18 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - uses: actions/checkout@v4
       - name: Login to GHCR
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-      - name: Build
-        run: docker build -t ghcr.io/ishan_karmakar/kickstart-website:${{ github.sha }} .
-      - name: Push
-        run: docker push ghcr.io/ishan_karmakar/kickstart-website:${{ github.sha }}
+        uses: docker/login-action@v3
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and push image
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: ghcr.io/ishan_karmakar/kickstart-website:${{ github.sha }}
