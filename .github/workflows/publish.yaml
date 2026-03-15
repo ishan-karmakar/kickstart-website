@@ -1,4 +1,4 @@
-name: Deploy Website to ArgoCD
+name: Publish to GHCR
 
 on:
   push:
