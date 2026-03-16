@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: kickstart
-        image: ghcr.io/ishan-karmakar/kickstart-website:1.0.0
+        image: ghcr.io/ishan-karmakar/kickstart-website:b8edfcb4810349c019a0854eb1fbcbd0f8a21c8c
         ports:
         - containerPort: 80
