@@ -4,11 +4,3 @@ metadata:
   name: kickstart
   annotations:
     keel.sh/policy: force
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: kickstart
-spec:
-  rules:
-  - host: kickstart-staging.everestsummitpm.com
