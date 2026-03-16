@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kickstart
+spec:
+  selector:
+    matchLabels:
+      app: kickstart
+  template:
+    metadata:
+      labels:
+        app: kickstart
+    spec:
+      containers:
+      - name: kickstart
+        image: lilshan24/kickstart-website
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80

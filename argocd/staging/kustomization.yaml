@@ -1,0 +1,9 @@
+resources:
+- ../base
+
+images:
+- name: lilshan24/kickstart-website
+  newTag: latest
+
+patches:
+- path: patch.yaml

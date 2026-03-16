@@ -1,0 +1,6 @@
+resources:
+- ../base
+
+images:
+- name: lilshan24/kickstart-website
+  newTag: 1.0.0
