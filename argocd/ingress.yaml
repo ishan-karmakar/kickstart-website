@@ -4,7 +4,8 @@ metadata:
   name: kickstart
 spec:
   rules:
-  - http:
+  - host: kickstart.everestsummitpm.com
+    http:
       paths:
       - path: /
         pathType: Prefix
