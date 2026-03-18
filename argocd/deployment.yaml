@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: kickstart
-        image: lilshan24/kickstart-website
+        image: lilshan24/kickstart-website:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
